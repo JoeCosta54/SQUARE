@@ -1,0 +1,69 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.3319]
+    Renderer: NVIDIA GeForce 840M           
+    Vendor:   NVIDIA
+    VRAM:     1972 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.266 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 0.833924 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 667.
+Total: 3.369909 ms (FindLiveObjects: 0.091090 ms CreateObjectMapping: 0.032074 ms MarkObjects: 0.267283 ms  DeleteObjects: 0.771486 ms)
+
+Platform assembly: C:\Users\Joey\Desktop\Unity Projects\My Projects\Homeless Man Studios\Platform game\left_Data\Managed\Boo.Lang.dll (this message is harmless)
+UnloadTime: 3.888652 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.246035 ms (FindLiveObjects: 0.074839 ms CreateObjectMapping: 0.040199 ms MarkObjects: 0.225801 ms  DeleteObjects: 0.012829 ms)
+
+UnloadTime: 2.795570 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.282814 ms (FindLiveObjects: 0.076977 ms CreateObjectMapping: 0.035067 ms MarkObjects: 0.225801 ms  DeleteObjects: 0.012829 ms)
+
+UnloadTime: 2.786589 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.222514 ms (FindLiveObjects: 0.076122 ms CreateObjectMapping: 0.036350 ms MarkObjects: 0.219386 ms  DeleteObjects: 0.012401 ms)
+
+UnloadTime: 2.830210 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.439762 ms (FindLiveObjects: 0.077832 ms CreateObjectMapping: 0.047469 ms MarkObjects: 0.262579 ms  DeleteObjects: 0.015395 ms)
+
+UnloadTime: 3.492645 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.921300 ms (FindLiveObjects: 0.100498 ms CreateObjectMapping: 0.055594 ms MarkObjects: 0.252743 ms  DeleteObjects: 0.012829 ms)
+
+UnloadTime: 2.692506 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 2.407688 ms (FindLiveObjects: 0.076122 ms CreateObjectMapping: 0.041054 ms MarkObjects: 0.247611 ms  DeleteObjects: 0.013684 ms)
+
