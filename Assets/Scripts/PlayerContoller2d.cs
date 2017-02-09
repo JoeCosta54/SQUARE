@@ -25,8 +25,10 @@ public class PlayerContoller2d : MonoBehaviour
 
 	void Update () 
 	{
-		Vector2 moveDir = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb2d.velocity.y);
-		rb2d.velocity = moveDir;
+		if(Input.GetAxisRaw("Horizontal") != 0){
+			Vector2 moveDir = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rb2d.velocity.y);
+			rb2d.velocity = moveDir;
+		}
 
 		isGrounded = Physics2D.OverlapCircle (groundPoint.position, radius, groundMask);
 	
