@@ -1,0 +1,25 @@
+{
+	"dialogueLines":[
+		{
+			"lineText":"This is a line of Dialogue!",
+			"audioClip":"Dialogue/EN/Scene0/LineAudio/1.wav",
+			"startChoice":false
+		},{
+			"lineText":"This is another!",
+			"audioClip":"Dialogue/EN/Scene0/LineAudio/2.wav",
+			"startChoice":false
+		},{
+			"lineText":"Which Dialogue ID should I go to next?",
+			"audioClip":"Dialogue/EN/Scene0/LineAudio/3.wav",
+			"startChoice":true
+		}
+	],
+	"dialogueChoice":{
+		"choiceDialogueIDs": [1,2,3],
+		"choiceText":[
+			"One",
+			"Two",
+			"Three"
+		]
+	}
+}

@@ -22,23 +22,33 @@ public class DialogueManager : MonoBehaviour
 	public Choice currentChoice;
 
 	public static string currentLineDialogue;
+	public static DialogueManager globalManager;
 
 	public void Awake(){
-		dialogueDatabase = new Dictionary<int, string>();
-		//Load the dialogueDatabase into the Dictionary
-		database = JsonUtility.FromJson<DialogueDatabase>(JsonFileReader.ReadJsonFromResource(dialogueDatabaseLocation));
-		switch (chosenLanguage) 
-		{
-			case Language.EN:
-			  loadDialogueFromDB(database.en);
-			  break;
-			case Language.ES:
-			  loadDialogueFromDB(database.es);
-			  break;
-			case Language.JP:
-			  loadDialogueFromDB(database.jp);
-			  break;
+		if(globalManager == null){
+			dialogueDatabase = new Dictionary<int, string>();
+			//Load the dialogueDatabase into the Dictionary
+			database = JsonUtility.FromJson<DialogueDatabase>(JsonFileReader.ReadJsonFromResource(dialogueDatabaseLocation));
+			switch (chosenLanguage) 
+			{
+				case Language.EN:
+				  loadDialogueFromDB(database.en);
+				  break;
+				case Language.ES:
+				  loadDialogueFromDB(database.es);
+				  break;
+				case Language.JP:
+				  loadDialogueFromDB(database.jp);
+				  break;
+			}
+			globalManager = this;
+			DontDestroyOnLoad(this.gameObject);
+		} else {
+			Destroy(this.gameObject);
 		}
+	}
+	public void Start(){
+		startDialogue(0);
 	}
 
 	public void Update(){
@@ -55,6 +65,11 @@ public class DialogueManager : MonoBehaviour
 
 	public static void startDialogue(int id){
 		//get the dialogue file from the database
+		Dialogue loadedDialogue = JsonUtility.FromJson<Dialogue>(JsonFileReader.ReadJsonFromResource(DialogueManager.globalManager.dialogueDatabase[id]));
+		foreach(Line l in loadedDialogue.dialogueLines){
+			DialogueManager.globalManager.dialogueQueue.Add(l);
+		}
+		DialogueManager.globalManager.currentChoice = loadedDialogue.dialogueChoice;
 		//Load the file into a Dialogue
 		//Load the Lines into the dialogue Queue
 		//Let the manager hit the update thread.

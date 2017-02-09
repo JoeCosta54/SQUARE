@@ -2,7 +2,7 @@
 	"en":[
 		{
 			"dialogueID":0,
-			"dialogueFileLocation":"Dialogue/EN/Scene/Dialogue0.json"
+			"dialogueFileLocation":"Dialogue/EN/Scene0/dialogue.json"
 		},{
 			"dialogueID":1,
 			"dialogueFileLocation":"Dialogue/EN/Scene/Dialogue1.json"
