@@ -5,27 +5,56 @@ using UnityEngine.UI;
 public class PlatformManager : MonoBehaviour {
 
 	public int startingplatforms;
-	private int plaltformCounter;
+	public int plaltformCounter;
+	public GameObject theText;
+	public GameObject cursor;
 
-	private Text theText;
-
-	public GameObject CreateObject;
+	public GameObject[] platforms;
+	public int currentPlatformID = 0;
 
 	// Use this for initialization
 	void Start () {
-		theText = GetComponent<Text>();
-
 		plaltformCounter = startingplatforms;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (plaltformCounter < 0)
-		{
-			CreateObject.SetActive(false);
+		Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
+		if(Input.GetAxis("Mouse ScrollWheel") * 10 != 0){
+			if(Input.GetAxis("Mouse ScrollWheel") * 10 > 0){
+				currentPlatformID += 1;
+			} else {
+				currentPlatformID -= 1;
+			}
+		} else if(Input.GetKeyDown(KeyCode.Q)){
+
 		}
-		theText.text = "x " + plaltformCounter;
+
+		if(currentPlatformID < 0){
+			currentPlatformID = platforms.Length - 1;
+		} else if(currentPlatformID > platforms.Length - 1){
+			currentPlatformID = 0;
+		}
+
+		if(plaltformCounter > 0 && Input.GetMouseButtonDown(0)){
+			Debug.Log("Click");
+			RaycastHit hitInfo;
+			Physics.Raycast(cursor.transform.position, Vector3.forward, out hitInfo, 100.0f);
+			if(hitInfo.collider != null && hitInfo.collider.gameObject.tag == "Soul") {
+
+			} else {
+				if(currentPlatformID >= 0 && currentPlatformID <= platforms.Length-1){
+					GameObject go = (GameObject) Instantiate(platforms[currentPlatformID], cursor.transform.position, Quaternion.identity);
+					go.transform.SetParent(this.transform);
+					plaltformCounter--;
+				}
+			}
+		}
+
+
+
+		theText.GetComponent<Text>().text = "x " + plaltformCounter;
 	}
 
 	public void GivePlat()
@@ -36,6 +65,11 @@ public class PlatformManager : MonoBehaviour {
 	public void TakePlat()
 	{
 		plaltformCounter--;
+	}
+
+	public int GetPlatCount()
+	{
+		return plaltformCounter;
 	}
 
 }

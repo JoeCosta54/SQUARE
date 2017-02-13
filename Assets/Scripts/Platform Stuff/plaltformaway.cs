@@ -10,9 +10,9 @@ public class plaltformaway : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-		platformManager = FindObjectOfType<PlatformManager> ();
+		platformManager = this.GetComponent<PlatformManager> ();
 
-		platformSystem = FindObjectOfType<PlatformManager> ();
+		platformSystem =  this.GetComponent<PlatformManager> ();
 	}
 	
 	// Update is called once per frame
@@ -20,8 +20,9 @@ public class plaltformaway : MonoBehaviour {
 	{
 		if (Input.GetButtonDown ("Fire1")) 
 		{
-			platformSystem.TakePlat ();
+			if(platformSystem.GetPlatCount() > 0){
+				platformSystem.TakePlat();
+			}
 		}
-						
 	}
 }
